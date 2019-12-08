@@ -13,7 +13,7 @@ public interface AccountDao {
      * 查找账户
      * @return
      */
-    @Select("select * from account")
+    /*@Select("select * from account")*/
     List<Account> findAll();
 
     /**
