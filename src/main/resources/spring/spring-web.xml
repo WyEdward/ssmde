@@ -26,9 +26,10 @@
     (1)加入对静态资源的处理：js,gif,png
     (2)允许使用"/"做整体映射
     <mvc:default-servlet-handler/>-->
-    <mvc:resources location="WEB-INF/resources/css/" mapping="/css/**" />
-    <mvc:resources location="WEB-INF/resources/images/" mapping="/images/**" />
-    <mvc:resources location="WEB-INF/resources/js/" mapping="/js/**" />
+    <mvc:resources location="/resources/" mapping="/resources/**"/>
+  <!--  <mvc:resources location="/resources/css/" mapping="/resources/css/**" />
+    <mvc:resources location="/resources/images/" mapping="/resources/images/**" />
+    <mvc:resources location="/resources/js/" mapping="/resources/js/**" />-->
 
     <!-- 简化配置：
 		(1)自动注册DefaultAnootationHandlerMapping,AnotationMethodHandlerAdapter
